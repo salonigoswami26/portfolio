@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Counter</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 96vh;
+       
+    
+    }
+
+    button{
+        width: 100px;
+        height: 20px;
+        background-color: black;
+        color: #fff;
+        border-radius: 10px;
+    }
+  
+</style>
+ <body>
+    <h1>Hello, My first javascript program</h1>
+    <p id="demo">click on count time</p>
+     <button id="btn">click me!</button>
+     <p>count me click : <span id="display">0</span></p>
+ 
+</body>
+<script>
+    document.getElementById('demo').style.fontSize="20px";
+    document.getElementById('demo').style.marginTop="0px"
+    let count = 0;
+    let btn = document.getElementById('btn');
+    let display = document.getElementById('display');
+    btn.addEventListener("click",function(){
+        count++;
+        display.innerHTML=count;
+    });
+  
+</script>
+</html>
